@@ -1,0 +1,100 @@
+.desktopPageseaguide {
+  width: 100vw;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3.75rem;
+    flex-wrap: wrap;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 400;
+    border-radius: 28px;
+    border: 2px solid #000;
+    display: inline-block;
+    height: fit-content;
+    width: 257px;
+    text-align: center;
+  }
+
+  &__intro {
+    padding-top: 3.75rem;
+    max-width: 40.625rem;
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  &__card {
+    max-height: 84rem;
+    max-width: 40.625rem;
+    margin-bottom: 7.5rem;
+  }
+
+  &__cardWrapper {
+    height: 22.5rem;
+  }
+
+  img {
+    width: 100%;
+    height: 54rem;
+    border-radius: 8px;
+    margin-bottom: 3.75rem;
+  }
+
+  &__name {
+    color: var(--Text-Fill-Primary-Default, #000);
+    font-family: "Alexandria", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: 2.5rem 0 32px 0;
+  }
+
+  &__image {
+    padding: 0 30px;
+
+    img {
+      border-radius: 8px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .desktopPageseaguide {
+    &__card {
+      height: 800px;
+      width: 26.625rem;
+      margin-bottom: 17.5rem;
+    }
+
+    img {
+      height: 500px;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .desktopPageseaguide {
+    &__intro {
+      margin-bottom: 30px;
+    }
+
+    .sea {
+      &__image {
+        width: 758px;
+        height: auto;
+      }
+    }
+
+    &__card {
+      width: 748px;
+      margin: 0 auto 7.5rem auto;
+    }
+  }
+}

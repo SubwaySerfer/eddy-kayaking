@@ -1,0 +1,112 @@
+.footer {
+  background-color: #1a1a1a;
+  padding: 84px 0 60px 0;
+  color: #fff;
+  text-align: center;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__nav {
+    display: flex;
+    gap: 44px;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    align-items: center;
+    align-self: stretch;
+
+    a {
+      color: var(--Text-Fill-Secondary-Default, #fff);
+      text-align: center;
+      /* 1440/Body3_XS */
+      font-family: "Inter", sans-serif;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__socials {
+    display: flex;
+    gap: 20px;
+    padding-top: 80px;
+    padding-bottom: 20px;
+    a {
+      width: 48px;
+      height: 48px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: #1a1a1a;
+
+      i {
+        font-size: 20px;
+        color: white;
+      }
+    }
+  }
+
+  &__copy {
+    color: var(--Text-Fill-Secondary-Default, #fff);
+    text-align: center;
+    /* 1440/Body3_XXS */
+    font-family: "Inter", sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17.5px;
+    /* 134.615% */
+    letter-spacing: 1px;
+
+    a {
+      display: block;
+      margin-top: 4px;
+      color: var(--Text-Fill-Thirty, #888);
+      text-align: center;
+      /* 1440/Body3_XXS */
+      font-family: "Inter", sans-serif;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 17.5px;
+      /* 134.615% */
+      letter-spacing: 1px;
+      text-decoration-line: underline;
+      text-decoration-style: solid;
+      text-decoration-skip-ink: auto;
+      text-decoration-thickness: auto;
+      text-underline-offset: auto;
+
+      &:hover {
+        color: #fff;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@media (max-width: 370px) {
+  .footer__nav {
+    padding: 0px 30px;
+    gap: 16px;
+  }
+}
+@media (max-width: 425px) {
+  .footer {
+    padding: 100px 0 60px 0;
+  }
+}

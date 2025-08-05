@@ -1,0 +1,70 @@
+.custom-select {
+  position: relative;
+  display: inline-block;
+  font-family: "Inter", sans-serif;
+  margin: 60px 0 35px 0;
+  &__button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #828282;
+    background: var(--color-white-100, #fff);
+    font-size: 16px;
+    cursor: pointer;
+    color: #828282;
+    text-align: center;
+    font-family: "Alexandria", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -0.48px;
+  }
+
+  &__icon {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-image: url("/images/icons/Union.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-shrink: 0;
+  }
+
+  &__dropdown {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    list-style: none;
+    margin: 0;
+    padding: 8px 0;
+    min-width: 180px;
+    z-index: 10;
+  }
+
+  &__option {
+    color: var(--Text-Fill-Primary-Default, #000);
+    text-align: center;
+    font-family: "Alexandria", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -0.48px;
+    cursor: pointer;
+    text-align: start;
+    padding: 10px;
+    align-items: center;
+    gap: 8px;
+
+    &:hover {
+      background-color: #f3f3f3;
+    }
+  }
+}

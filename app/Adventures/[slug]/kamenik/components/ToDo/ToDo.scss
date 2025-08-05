@@ -1,0 +1,47 @@
+.toDo {
+  width: 100vw;
+
+  &__text {
+    display: flex;
+    justify-content: space-between;
+    padding: 3.75rem 3.7rem;
+  }
+
+  &__title {
+    color: #000;
+    font-family: "Alexandria", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+    /* 26.4px */
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    display: flex;
+    padding: 0.5rem 0.75rem;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 1.75rem;
+    border: 2px solid #000;
+    height: 2.06rem;
+  }
+
+  &__list {
+    max-width: 680px;
+    margin-bottom: 40px;
+    font-size: 0.95rem;
+    font-weight: 400;
+    line-height: 160%;
+    list-style-type: disc;
+    padding-left: 20px;
+
+    li {
+      color: #000;
+      font-size: 1.125rem;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 160%;
+      /* 1.8rem */
+    }
+  }
+}

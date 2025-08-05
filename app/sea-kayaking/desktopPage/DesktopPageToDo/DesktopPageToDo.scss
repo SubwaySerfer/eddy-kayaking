@@ -1,0 +1,105 @@
+.desktopPageseatoDo {
+  width: 100vw;
+
+  &__text {
+    display: flex;
+    justify-content: space-between;
+    padding: 3.75rem 3.7rem;
+  }
+
+  &__title {
+    color: #000;
+    font-family: "Alexandria", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+    /* 26.4px */
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    display: flex;
+    padding: 8px 12px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 1.75rem;
+    border: 2px solid #000;
+    height: 33px !important;
+    width: 266px !important;
+  }
+
+  &__list {
+    max-width: 680px;
+    margin-bottom: 40px;
+    font-size: 0.95rem;
+    font-weight: 400;
+    line-height: 160%;
+    list-style-type: disc;
+    padding-left: 20px;
+
+    li {
+      color: #000;
+      font-size: 1.125rem;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 160%;
+    }
+  }
+
+  &__image {
+    padding: 0 30px;
+
+    img {
+      border-radius: 8px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .desktopPageseatoDo {
+    &__text {
+      padding: 2.75rem 60px;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    &__title {
+      color: #000;
+      font-family: "Alexandria", sans-serif;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 110%;
+      /* 26.4px */
+      letter-spacing: 2.4px;
+      text-transform: uppercase;
+      display: flex;
+      padding: 8px 12px;
+      align-items: center;
+      gap: 10px;
+      border-radius: 1.75rem;
+      border: 2px solid #000;
+      height: 33px !important;
+      width: 266px !important;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .desktopPageseatoDo {
+    &__list {
+      font-size: 18px;
+    }
+
+    &__title {
+      font-size: 20px;
+    }
+
+    &__text {
+      padding: 20px 30px 44px;
+    }
+    &__image {
+      padding: 0 10px;
+    }
+  }
+}

@@ -1,0 +1,257 @@
+.rentalPage {
+  padding: 80px 20px;
+  background: #fff;
+  text-align: center;
+
+  &__headerText {
+    display: flex;
+    margin: 0 60px;
+  }
+
+  &__headerText p {
+    color: #000;
+    font-family: TharLon;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.64px;
+    text-transform: uppercase;
+    max-width: 650px;
+    text-align: start;
+  }
+
+  &__grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    padding: 0 20px;
+  }
+}
+
+.rentalPage-card {
+  margin: 17px;
+  height: 484px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  max-width: 364px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 484px; // минимум, но НЕ фиксированная высота
+  height: auto; // разрешаем рост
+  overflow: hidden;
+
+  &__title {
+    color: var(--Text-Fill-Primary-Default, #000);
+    text-align: center;
+    font-family: "Alexandria", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    margin: 0 26px 16px 26px;
+    text-align: center;
+    text-wrap: nowrap;
+  }
+
+  &__image {
+    width: 100%;
+    height: 179px;
+    background: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 100%;
+      height: 179px;
+      object-fit: contain;
+    }
+  }
+
+  &__info {
+    color: var(--Text-Fill-Primary-Default, #000);
+    font-family: "Alexandria", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%;
+    width: 307px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    justify-content: flex-end;
+    max-height: 176px;
+    margin: 0 26px 16px 26px;
+    flex-grow: 1;
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+  }
+
+  &__prices {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+
+    &__span {
+      border-radius: 4px;
+      border: 1px solid var(--Color-Brand-Red, #e8593b);
+      background: var(--Color-Brand-Red, #e8593b);
+      color: var(--Text-Fill-Secondary-Default, #fff);
+      text-align: center;
+      font-family: "Alexandria", sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 150%;
+      padding: 0 4px;
+    }
+  }
+
+  &__button {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    padding: 27px 0;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: var(--color-white-100, #fff);
+    text-align: center;
+    font-family: "Alexandria", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    border-radius: 0 0 8px 8px;
+    background: var(--Bg-Button, #1a1a1a);
+    margin-top: auto; // приклеивает к нижнему краю карточки
+
+    &:hover {
+      background: #333;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .rentalPage__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .rentalPage {
+    &__headerText {
+      margin: 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .rentalPage__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rentalPage-card {
+    margin: 0 auto;
+
+    &__button {
+      width: 100%;
+      padding: 27px 0;
+    }
+  }
+
+  .rentalPage {
+    &__headerText {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      gap: 2rem;
+      margin: 0 auto;
+      align-content: center;
+      align-self: stretch;
+      color: #000;
+      font-family: "Alexandria", sans-serif;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 1.5rem;
+    }
+  }
+}
+
+@media (max-width: 325px) {
+  .rentalPage-card {
+    max-width: 254px;
+    width: fit-content;
+
+    &__title {
+      color: var(--Text-Fill-Primary-Default, #000);
+      text-align: center;
+      font-family: "Alexandria", sans-serif;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 110%;
+      /* 26.4px */
+      letter-spacing: 2.4px;
+      text-transform: uppercase;
+      text-wrap: wrap;
+      padding-bottom: 35px;
+    }
+
+    &__info {
+      color: var(--Text-Fill-Primary-Default, #000);
+      text-align: center;
+      font-family: "Alexandria", sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 150%;
+      /* 24px */
+
+      .a {
+        width: 80px;
+        text-align: start;
+      }
+    }
+
+    .b {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+
+    &__prices {
+      width: 109px;
+
+      &__span {
+        color: var(--Bg-Primary, #fff);
+        text-align: center;
+        font-family: "Alexandria", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 150%;
+        /* 24px */
+      }
+    }
+  }
+}

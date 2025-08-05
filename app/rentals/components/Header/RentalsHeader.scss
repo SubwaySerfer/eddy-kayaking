@@ -1,0 +1,63 @@
+.rentalsHeader {
+  position: relative;
+  width: 100%;
+  height: clamp(400px, 90vh, 810px); // адаптивная высота
+  overflow: hidden;
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: url('/images/rental/20230813_175401 1.png') center / cover no-repeat;
+    z-index: 1;
+    border-bottom-left-radius: 50vw;
+    border-bottom-right-radius: 50vw;
+    width: 100%;
+  }
+
+  &__svg {
+    position: absolute;
+    width: clamp(200px, 40vw, 840px);
+    z-index: 2;
+    pointer-events: none;
+    opacity: 0.4;
+
+    svg {
+      width: 100%;
+      height: auto;
+      fill: #FFF;
+    }
+
+    &--top {
+    top: 70px;
+    left: 122px;
+    }
+
+    &--bottom {
+        top: 100px;
+    right: 94px;
+    }
+  }
+
+  &__content {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 1rem;
+    text-align: center;
+  }
+
+  &__title {
+    color: white;
+    font-size: clamp(2.5rem, 10vw, 96px);
+    font-weight: bold;
+    letter-spacing: clamp(2px, 1vw, 8px);
+    text-transform: uppercase;
+    opacity: 0.4;
+    margin: 0;
+  }
+}

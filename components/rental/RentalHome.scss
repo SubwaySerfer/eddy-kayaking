@@ -1,0 +1,141 @@
+.home-rental {
+  padding: 90px 0;
+}
+.home-rental__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 0 8.75rem;
+}
+.home-rental__list {
+  //   margin: 80px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
+.home-rental__btn {
+  display: flex;
+  width: 360px;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 16px;
+  border: 3px solid #000;
+  margin-top: 30px;
+  margin-bottom: 22px;
+}
+
+.home-rental-card-item {
+  display: flex;
+  width: 380px;
+  height: 280px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  color: var(--Text-Fill-Primary-Default, #000);
+  text-align: center;
+
+  /* 1440/Button */
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: var(--Display-Small-Line-Height, 44px); /* 183.333% */
+  letter-spacing: var(--Display-Medium-Tracking, 0px);
+}
+
+.home-rental-card-item__title {
+  color: var(--Text-Fill-Primary-Default, #000);
+  text-align: center;
+
+  /* 1440/H5_RentalCards */
+  font-family: "Alexandria", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%; /* 35.2px */
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+}
+
+.home-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background-color: transparent;
+  border: 3px solid #000000;
+  border-radius: 16px;
+  font-family: "Inter", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 44px;
+  cursor: pointer;
+}
+.home-btn--blue {
+  padding: 18px;
+  color: #ffffff;
+  background-color: #1a1a1a;
+  border: none;
+}
+.home-btn--form {
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+}
+
+@media (max-width: 1024px) {
+  .home-rental__wrapper {
+    padding: 0 4.4rem;
+    // gap: 5px;
+  }
+
+  .home-rental__list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .home-rental__btn {
+    margin: 0;
+    width: 200px;
+    height: 56px;
+    color: var(--Text-Fill-Primary-Default, #000);
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 100% */
+  }
+}
+
+@media (max-width: 425px) {
+  .home-rental__wrapper {
+    gap: 5px;
+  }
+
+  .home-rental-card-item {
+    width: 330px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}

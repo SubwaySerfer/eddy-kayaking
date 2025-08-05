@@ -1,0 +1,139 @@
+.review {
+  display: flex;
+  align-items: flex-start;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid var(--Text-Fill-Thirty, #888);
+  padding: 35px 50px;
+  gap: 24px;
+  width: 43.75rem;
+  flex-direction: row;
+  height: 26rem;
+  box-sizing: border-box;
+  position: relative;
+
+  &__avatar img {
+    border-radius: 75px;
+    border: 1px solid var(--color-black-100, #000);
+    background: var(--color-white-100, #fff);
+    max-width: 100px;
+    // height: 130px;
+    margin-bottom: 10px;
+  }
+
+  &__avatar span {
+    color: #000;
+    text-align: center;
+    max-width: 100px;
+    text-wrap: nowrap;
+  }
+
+  &__content {
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+
+    /* 1440/Body_new */
+    font-family: "Alexandria", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 180%;
+    /* 43.2px */
+  }
+
+  &__text {
+    line-height: 1.5;
+    // padding: 11px 50px 0;
+    flex: 1;
+    min-height: 0;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    align-items: flex-end;
+    // padding: 0 0 35px 0;
+    margin-top: auto;
+    flex-shrink: 0;
+    height: 35px;
+  }
+
+  &__stars {
+    display: flex;
+    gap: 4px;
+  }
+
+  &__link {
+    font-size: 10px;
+    color: #666;
+    text-decoration: underline;
+    transition: 0.2s;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+@media (max-width: 1024px) {
+  .review {
+    &__content {
+      color: #000;
+      text-align: center;
+      font-family: "Alexandria", sans-serif;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 140%; /* 1.4rem */
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .review {
+    width: 400px;
+    height: 22rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .review {
+    width: 340px;
+    padding: 24px 20px;
+
+    &__content {
+      align-items: center;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .review {
+    width: 290px;
+    padding: 14px 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .review {
+    width: 230px;
+  }
+}

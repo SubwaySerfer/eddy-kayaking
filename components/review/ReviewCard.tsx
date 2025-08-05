@@ -1,0 +1,44 @@
+import React from "react";
+import Image from "next/image";
+import styles from "./ReviewCard.module.scss";
+
+const ReviewCard = ({ name, text, href, avatar }: any) => {
+  return (
+    <div className={styles.wrapper}>
+      <div className={styles.review__avatar}>
+        <Image src={avatar} alt={name} width={100} height={100} />
+        <span>{name}</span>
+      </div>
+
+      <div className={styles.review}>
+        <div className={styles.review__content}>
+          <p className={styles.review__text}>{text}</p>
+
+          <div className={styles.review__footer}>
+            <div className={styles.review__stars}>
+              {[...Array(5)].map((_, i) => (
+                <Image
+                  key={i}
+                  src="/images/icons/star.svg"
+                  alt="Star"
+                  width={16}
+                  height={16}
+                />
+              ))}
+            </div>
+            <a
+              href={href}
+              className={styles.review__link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View on Google Maps
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default ReviewCard;

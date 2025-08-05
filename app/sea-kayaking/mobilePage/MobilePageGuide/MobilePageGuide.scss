@@ -1,0 +1,107 @@
+.MobilePageseaguide {
+  width: 100vw;
+  padding: 0 10px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 40px;
+    flex-wrap: wrap;
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 28px;
+    border: 2px solid #000;
+    display: inline-block;
+    height: fit-content;
+    width: 257px;
+    text-align: center;
+    font-family: "Alexandria", sans-serif;
+  }
+
+  &__intro {
+    padding-top: 20px;
+    max-width: 40.625rem;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  &__text {
+    color: #000;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%; /* 25.6px */
+  }
+
+  &__card {
+    max-height: 100%;
+    // max-width: 330px;
+    margin-bottom: 40px;
+
+    img {
+      width: 365px;
+      max-height: 440px;
+      border-radius: 8px;
+      object-fit: cover;
+      transform: rotateY(180deg);
+      // margin: 0 auto;
+    }
+  }
+
+  &__cardWrapper {
+    height: auto;
+    margin-top: 20px;
+  }
+
+  &__name {
+    color: var(--Text-Fill-Primary-Default, #000);
+    font-family: "Alexandria", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+
+  &__description {
+    font-family: "Inter", sans-serif;
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%; /* 25.6px */
+    margin-bottom: 14px;
+  }
+
+  &__readmore {
+    color: var(--Color-Other-Blue, #1f4e75);
+    text-align: right;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%; /* 22.4px */
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 425px) {
+  .MobilePageseaguide {
+    &__image {
+      img {
+        border-radius: 8px;
+      }
+    }
+  }
+}

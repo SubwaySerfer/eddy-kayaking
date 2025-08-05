@@ -1,0 +1,149 @@
+.slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 24px;
+  margin: 104px 0 120px 0;
+  padding: 0 40px;
+  width: 100%;
+  overflow: hidden;
+
+  &__reviews {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 24px;
+    margin: 40px 0;
+    padding: 0 16px;
+    width: 100%;
+  }
+
+  &__arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    z-index: 2;
+
+    &:first-child {
+      left: 2.5rem;
+    }
+
+    &:last-child {
+      right: 2.5rem;
+    }
+
+    &:hover {
+      transform: translateY(-50%) scale(1.2);
+    }
+  }
+
+  &__title {
+    color: var(--Text-Fill-Primary-Default, #000);
+    text-align: center;
+
+    /* 1440/H7 */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
+    font-family: "Alexandria", sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    /* 48px */
+    letter-spacing: 4.8px;
+    text-transform: uppercase;
+  }
+}
+
+.TA_socialButtonRate {
+  width: 54px;
+  height: 22px;
+  flex-shrink: 0;
+  aspect-ratio: 27/11;
+}
+
+.reviewus {
+  display: flex;
+  color: var(--Color-Other-Grey, #666);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%; /* 15.4px */
+  letter-spacing: 0.14px;
+  gap: 6.73px;
+}
+
+.google {
+  width: 60px;
+  height: 19px;
+}
+
+.reviewtrip {
+  height: 18px;
+}
+@media (max-width: 1024px) {
+  .slider {
+    gap: 0;
+    &__arrow {
+      &:first-child {
+        left: 16px;
+      }
+
+      &:last-child {
+        right: 16px;
+      }
+    }
+
+    &__title {
+      color: var(--Text-Fill-Primary-Default, #000);
+      text-align: center;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: #000;
+      font-family: "Alexandria", sans-serif;
+      font-size: 1.75rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 100%; /* 1.75rem */
+      letter-spacing: 0.175rem;
+      text-transform: uppercase;
+      display: inline;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .slider {
+    &__arrow {
+      display: none;
+    }
+
+    &__reviews {
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      padding: 0;
+      padding-bottom: 1rem;
+      justify-content: flex-start;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+    &__card {
+      flex: 0 0 auto;
+      scroll-snap-align: start;
+    }
+  }
+}

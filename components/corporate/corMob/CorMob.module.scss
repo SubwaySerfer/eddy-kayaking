@@ -1,0 +1,201 @@
+$ff-alexandria: "Alexandria", sans-serif;
+$ff-inter: "Inter", sans-serif;
+$color-white: #fff;
+
+.corporateMob {
+  margin-top: 100px;
+  /* оставить так — это корневой wrapper */
+}
+
+.modalMob__overlayMob {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalMob {
+  display: flex;
+  width: 24.375rem;
+  padding: 2rem 1.25rem 1.25rem 1.25rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.75rem;
+  border-radius: 0.25rem;
+  background: var(--color-white-100, #fff);
+}
+
+.modalMob__textMob {
+  color: #000;
+  text-align: center;
+  font-family: "Alexandria", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%;
+}
+
+.modalMob__buttonMob {
+  display: flex;
+  width: 5rem;
+  height: 2.5rem;
+  padding: 0.625rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  color: #fff;
+  text-align: center;
+  font-family: "Alexandria", sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  border: 2px solid #1a1a1a;
+  background: #1a1a1a;
+}
+
+.corporateMob__wrapperMob {
+  background:
+    linear-gradient(0deg, rgba(0, 0, 0, 0) 2.63%, rgba(0, 0, 0, 0.52) 46.18%),
+    linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.04) 0%,
+      rgba(255, 255, 255, 0.04) 100%
+    ),
+    linear-gradient(
+      0deg,
+      rgba(141, 141, 141, 0.39) 0%,
+      rgba(141, 141, 141, 0.39) 100%
+    ),
+    url("/images/corporate/corp-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: normal, normal, color-dodge, normal;
+  padding: 28px 22px 45px;
+  color: $color-white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.corporateMob__titleMob {
+  color: var(--Text-Fill-Primary-Default, #000);
+  text-align: center;
+  font-family: $ff-alexandria;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 36px */
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.corporateMob__descriptionMob {
+  font-family: $ff-alexandria;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 1.8px rgba(0, 0, 0, 0.37);
+  padding: 0;
+}
+
+.corporateMob__formMob {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  flex-direction: row !important;
+  margin-bottom: 20px;
+  align-items: end;
+}
+
+.corporateMob__buttonMob {
+  width: 160px;
+  height: 48px;
+  background-color: transparent;
+  border: 1px solid $color-white;
+  color: $color-white;
+  font-family: $ff-alexandria;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.corporateMob__privacyMob {
+  margin: 0;
+  padding: 0;
+  color: $color-white;
+  text-align: center;
+  font-family: $ff-inter;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+}
+
+.corporateMob__privacy-linkMob {
+  color: $color-white;
+  text-decoration: underline;
+  margin: 0 4px;
+}
+
+.custom-inputMob {
+  min-width: 280px;
+  max-width: 360px;
+  color: black;
+}
+
+.custom-inputMob__labelMob {
+  display: block;
+  text-align: left;
+  font-family: $ff-alexandria;
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: $color-white;
+}
+
+.custom-inputMob__fieldMob {
+  display: flex;
+  width: 300px;
+  height: 56px;
+  padding: 6px 8px 6px 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 4px;
+  background: #fff;
+}
+
+.custom-inputMob__fieldMob::placeholder {
+  color: var(--Text-Fill-Primary-Hover, #909090);
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.custom-inputMob__fieldMob:focus {
+  outline: none;
+  border-color: $color-white;
+}
+
+@media (max-width: 320px) {
+  .custom-inputMob__fieldMob {
+    width: 280px;
+  }
+}

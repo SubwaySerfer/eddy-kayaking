@@ -1,0 +1,196 @@
+.tours {
+  padding: 0;
+  width: 100%;
+}
+.tours__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.tours__title {
+  font-family: "Archivo Black", "Arial", sans-serif;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 56px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 70px;
+  display: block;
+  padding: 0 300px;
+}
+.tours__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  gap: 0;
+}
+.tours__button {
+  display: flex;
+  width: 360px;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  background: var(--Color-Other-Blue, #1f4e75);
+  color: var(--Text-Fill-Secondary-Default, #fff);
+  text-align: center;
+
+  /* 1440/Button */
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: var(--Display-Small-Line-Height, 44px); /* 183.333% */
+  letter-spacing: var(--Display-Medium-Tracking, 0px);
+  margin: 60px 0;
+}
+
+.tourCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #d9d9d9;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 50vw;
+  height: 432px;
+  border-radius: 0;
+  position: relative;
+  padding: 160px 100px;
+}
+.tourCard__title {
+  font-family: "Alexandria", "Arial", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.tourCard__description {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Alexandria", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: normal;
+  margin: 0;
+  padding: 0;
+}
+.tourCardSvNikola {
+  background-image:
+    linear-gradient(
+      0deg,
+      rgba(140, 80, 24, 0.08) 0%,
+      rgba(140, 80, 24, 0.08) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.55) 47.5%,
+      rgba(0, 0, 0, 0.22) 100%
+    ),
+    url("/images/tours/sveti-nikola.jpg");
+}
+.tourCardKamenik {
+  background-image:
+    linear-gradient(
+      0deg,
+      rgba(41, 91, 185, 0.12) 0%,
+      rgba(41, 91, 185, 0.12) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.53) 47.5%,
+      rgba(0, 0, 0, 0.21) 100%
+    ),
+    url("/images/tours/kamenik.jpg");
+}
+.tourCardMoraca {
+  background-image:
+    linear-gradient(
+      0deg,
+      rgba(151, 73, 27, 0.05) 0%,
+      rgba(151, 73, 27, 0.05) 100%
+    ),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.58) 56%, rgba(0, 0, 0, 0.23) 100%),
+    url("/images/tours/moraca.jpg");
+}
+.tourCardCaves {
+  background-image:
+    linear-gradient(
+      0deg,
+      rgba(140, 80, 24, 0.07) 0%,
+      rgba(140, 80, 24, 0.07) 100%
+    ),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.5) 47.5%, rgba(0, 0, 0, 0.2) 100%),
+    url("/images/tours/caves.jpg");
+}
+
+@media (max-width: 1024px) {
+  .tours__title {
+    padding: 0 112px;
+  }
+
+  .tourCard {
+    padding: 130px 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tourCard {
+    padding: 100px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tours__title {
+    font-size: 36px;
+    line-height: 28px;
+    padding: 0 12px;
+    margin-bottom: 24px;
+  }
+  .tours__button {
+    width: 200px;
+    height: 48px;
+    font-size: 16px;
+    margin: 24px auto 80px auto;
+  }
+  .tourCard {
+    width: 100vw;
+    height: 270px;
+    padding: 0 30px;
+    gap: 37px;
+  }
+  .tourCard__title {
+    font-size: 25px;
+    line-height: 20px;
+  }
+  .tourCard__description {
+    font-size: 12px;
+  }
+}
+@media (max-width: 390px) {
+  .tours {
+    padding: 0 2px;
+  }
+  .tourCard {
+    height: 250px;
+  }
+
+  .tours__button {
+    width: 300px !important;
+  }
+}

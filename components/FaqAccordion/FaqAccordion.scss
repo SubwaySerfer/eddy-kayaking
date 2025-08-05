@@ -1,0 +1,135 @@
+.faqAccordion {
+  padding: 60px 20px;
+  max-width: 82.5rem;
+  margin: 0 auto;
+
+  &__title {
+    color: #1a1a1a;
+    font-family: "Alexandria", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+    /* 1.65rem */
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    display: flex;
+    padding: 0.75rem 1.25rem;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 1.75rem;
+    border: 2px solid #000;
+    width: 31.375rem;
+    height: 2.5625rem;
+    margin: 3.75rem 0;
+  }
+
+  &__titleSmall {
+    color: #000;
+    font-family: "Alexandria", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 22px */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: flex;
+    padding: 8px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 28px;
+    border: 2px solid #000;
+    width: 62px;
+    margin: 40px 0;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__item {
+    border-top: 1px solid black;
+    display: flex;
+    width: 100%;
+    padding: 1.25rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+
+    &:last-child {
+      border-bottom: 1px solid black;
+    }
+
+    &.closed {
+      &__item {
+        border-top: 1px solid black;
+        display: flex;
+        width: 100%;
+        padding: 0 1.25rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.25rem;
+      }
+    }
+  }
+
+  &__question {
+    color: #000;
+    font-family: "Alexandria", sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+    /* 1.65rem */
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  &__icon {
+    font-size: 1.25rem;
+  }
+
+  &__answer {
+    color: #000;
+    font-family: "Inter", sans-serif;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%;
+    /* 1.8rem */
+    align-self: stretch;
+    text-align: start;
+  }
+}
+
+@media (max-width: 425px) {
+  .faqAccordion {
+    &__question {
+      color: #000;
+      font-family: "Alexandria", sans-serif;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 110%;
+      /* 22px */
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-align: start;
+    }
+
+    &__answer {
+      color: #000;
+      font-family: "Inter", sans-serif;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 160%;
+      /* 28.8px */
+    }
+  }
+}
