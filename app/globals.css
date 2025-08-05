@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Alexandria Light */
+@font-face {
+  font-family: 'Alexandria';
+  src:
+    url('/fonts/Alexandria-Light.woff2') format('woff2'),
+    url('/fonts/Alexandria-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Alexandria Regular */
+@font-face {
+  font-family: 'Alexandria';
+  src:
+    url('/fonts/Alexandria-Regular.woff2') format('woff2'),
+    url('/fonts/Alexandria-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Alexandria Medium */
+@font-face {
+  font-family: 'Alexandria';
+  src:
+    url('/fonts/Alexandria-Medium.woff2') format('woff2'),
+    url('/fonts/Alexandria-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
