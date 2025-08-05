@@ -1,5 +1,5 @@
 .home-rental {
-  padding: 90px 0;
+  padding: 140px 0;
 }
 .home-rental__wrapper {
   display: flex;
@@ -13,7 +13,7 @@
   padding: 0;
   list-style: none;
   display: flex;
-  gap: 30px;
+  gap: 10px;
   justify-content: space-between;
   flex-direction: row;
   width: 100%;
@@ -27,8 +27,7 @@
   gap: 10px;
   border-radius: 16px;
   border: 3px solid #000;
-  margin-top: 30px;
-  margin-bottom: 22px;
+  margin-top: 10px;
 }
 
 .home-rental-card-item {
@@ -38,7 +37,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 16px;
+  gap: 12px;
   color: var(--Text-Fill-Primary-Default, #000);
   text-align: center;
 
@@ -49,6 +48,9 @@
   font-weight: 500;
   line-height: var(--Display-Small-Line-Height, 44px); /* 183.333% */
   letter-spacing: var(--Display-Medium-Tracking, 0px);
+}
+.pt-top {
+  padding-top: 4px;
 }
 
 .home-rental-card-item__title {

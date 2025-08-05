@@ -31,7 +31,7 @@ const Rental = () => {
                     className="home-rental-card-item__image"
                   />
                 </div>
-                <h3 className="home-rental-card-item__title">double kayaks</h3>
+                <h3 className="home-rental-card-item__title pt-top">double kayaks</h3>
               </Link>
             </li>
             <li>
@@ -59,7 +59,7 @@ const Rental = () => {
                     className="home-rental-card-item__image"
                   />
                 </div>
-                <h3 className="home-rental-card-item__title">paddle boards</h3>
+                <h3 className="home-rental-card-item__title pt-top">paddle boards</h3>
               </Link>
             </li>
           </ul>
