@@ -3,7 +3,7 @@
   &__list {
     display: flex;
     flex-wrap: wrap;
-    gap: 214px;
+    gap: 48px;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -27,6 +27,8 @@
   align-items: center;
   gap: 10px;
   transition: transform 0.3s ease;
+  border-radius: 8px;
+  overflow: hidden;
 
   &:hover {
     transform: translateY(-5px);
@@ -37,13 +39,13 @@
   }
 
   &--tours {
-    background-image: url("/images/main/tours@2x.jpg") !important;
+    background-image: url('/images/main/tours@2x.jpg') !important;
     background-size: cover;
     background-position: center;
   }
 
   &--market {
-    background-image: url("/images/main/market@2x.png") !important;
+    background-image: url('/images/main/market@2x.png') !important;
     background-size: cover;
     background-position: center;
   }
@@ -63,7 +65,7 @@
   }
 
   &__title {
-    font-family: "Unbounded", "Arial", sans-serif;
+    font-family: 'Unbounded', 'Arial', sans-serif;
     font-size: 32px;
     font-weight: 900;
     line-height: normal;
@@ -75,7 +77,7 @@
 
   &__desc {
     color: #ffffff;
-    font-family: "Alexandria", "Arial", sans-serif;
+    font-family: 'Alexandria', 'Arial', sans-serif;
     font-size: 18px;
     font-weight: 300;
     line-height: normal;
@@ -95,7 +97,7 @@
   }
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1200px) {
   .nav-cards {
     &__item {
       flex: 0 0 480px;
