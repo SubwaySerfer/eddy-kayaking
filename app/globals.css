@@ -34,3 +34,47 @@
   font-style: normal;
   font-display: swap;
 }
+
+/* ArchivoBlack Regular */
+@font-face {
+  font-family: 'ArchivoBlack';
+  src:
+    url('/fonts/ArchivoBlack-Regular.woff2') format('woff2'),
+    url('/fonts/ArchivoBlack-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Inter24pt Medium */
+@font-face {
+  font-family: 'Inter24pt';
+  src:
+    url('/fonts/Inter24pt-Medium.woff2') format('woff2'),
+    url('/fonts/Inter24pt-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* TharLon Regular */
+@font-face {
+  font-family: 'TharLon';
+  src:
+    url('/fonts/TharLon.woff2') format('woff2'),
+    url('/fonts/TharLon.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Unbounded Black */
+@font-face {
+  font-family: 'Unbounded';
+  src:
+    url('/fonts/Unbounded-Black.woff2') format('woff2'),
+    url('/fonts/Unbounded-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
