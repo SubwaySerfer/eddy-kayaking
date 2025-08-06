@@ -4,8 +4,8 @@
 
   &__tabs {
     display: flex;
-    justify-content: flex-end;
-    padding-right: 136px;
+    justify-content: center;
+    padding-left: 580px;
     background: #fff;
   }
 
@@ -133,7 +133,7 @@
 @media (max-width: 1024px) {
   .contact-tabs {
     &__tabs {
-      padding-right: 10px;
+      padding-left: 0;
     }
 
     .map-wrap {
@@ -163,6 +163,7 @@
   .contact-tabs {
     &__tabs {
       padding: 0 42.5px;
+      
     }
 
     &__tab {

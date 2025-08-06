@@ -5,7 +5,7 @@ import "./RentalHome.scss";
 
 const Rental = () => {
   return (
-    <section className="home-rental">
+    <section className="home-rental container">
       <div className="home-container">
         <div className="home-rental__wrapper">
           <h2 className="home-rental__title visually-hidden">Rental</h2>
