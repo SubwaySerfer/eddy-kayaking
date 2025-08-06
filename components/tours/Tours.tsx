@@ -4,14 +4,14 @@ import Link from "next/link";
 
 const Tours = () => {
   return (
-    <section className={styles.tours}>
+    <section className={`${styles.tours} container`}>
       {/* <div className="container container--big"> */}
       <div className={styles.tours__wrapper}>
-        <Link href="/adventures" style={{ width: "100vw" }}>
+        <Link href="/adventures">
           <h2 className={styles.tours__title}>Regular Water Adventures</h2>
         </Link>
         <ul className={styles.tours__list}>
-          <Link href={"/adventures/sveti-nikola"}>
+          {/* <Link href={"/adventures/sveti-nikola"}> */}
             <li className={styles.tours__item}>
               <a
                 className={`${styles.tourCard} ${styles.tourCardSvNikola}`}
@@ -25,8 +25,8 @@ const Tours = () => {
                 </p>
               </a>
             </li>
-          </Link>
-          <Link href={"/adventures/kamenik"}>
+          {/* </Link> */}
+          {/* <Link href={"/adventures/kamenik"}> */}
             <li className={styles.tours__item}>
               <a
                 className={`${styles.tourCard} ${styles.tourCardKamenik}`}
@@ -39,8 +39,8 @@ const Tours = () => {
                 </p>
               </a>
             </li>
-          </Link>
-          <Link href={"/adventures/vranjina"}>
+          {/* </Link> */}
+          {/* <Link href={"/adventures/vranjina"}> */}
             <li className={styles.tours__item}>
               <a
                 className={`${styles.tourCard} ${styles.tourCardMoraca}`}
@@ -53,8 +53,8 @@ const Tours = () => {
                 </p>
               </a>
             </li>
-          </Link>
-          <Link href={"/adventures/pigeon-cave"}>
+          {/* </Link> */}
+          {/* <Link href={"/adventures/pigeon-cave"}> */}
             <li className={styles.tours__item}>
               <a
                 className={`${styles.tourCard} ${styles.tourCardCaves}`}
@@ -67,7 +67,7 @@ const Tours = () => {
                 </p>
               </a>
             </li>
-          </Link>
+          {/* </Link> */}
         </ul>
         <Link href="/adventures">
           <button

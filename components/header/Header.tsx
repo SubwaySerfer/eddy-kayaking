@@ -73,7 +73,7 @@ const Header = ({
   }, []);
 
   return (
-    <header className={styles.header}>
+    <header className={`${styles.header} ${styles.container}`}>
       <div>
         <div className={styles.header__wrapper} id="header__logo-link">
           <Link href="/" id="logo">

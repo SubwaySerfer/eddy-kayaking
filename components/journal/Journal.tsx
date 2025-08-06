@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const Journal = () => {
   return (
-    <section className={styles.journal}>
+    <section className={`${styles.journal} container`}>
       <div className={styles.journal__wrapper}>
         <h2 className="visually-hidden">Journal</h2>
         <Link href="/Journal">

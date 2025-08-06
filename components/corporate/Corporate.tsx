@@ -65,8 +65,8 @@ const Corporate = () => {
             </div>
           )}
           <div className={styles.corporate__wrapper}>
-            <h2 className={styles.corporate__title}>CORPORATE ADVENTURES</h2>
-            <p className={styles.corporate__description}>
+            <h2 className={`${styles.corporate__title} container`}>CORPORATE ADVENTURES</h2>
+            <p className={`${styles.corporate__description} container`}>
               We can organize the best water adventure for your team: speed and
               endurance races, exploring wild beaches and bays with panoramic
               views, and a barbecue by the water.
@@ -74,7 +74,7 @@ const Corporate = () => {
               Enter your contacts, and we'll get in touch.
             </p>
 
-            <form className={styles.corporate__form} onSubmit={handleSubmit}>
+            <form className={`${styles.corporate__form} container`} onSubmit={handleSubmit}>
               <div className={styles["custom-input"]}>
                 <label className={styles["custom-input__label"]} htmlFor="mail">
                   Your mail
