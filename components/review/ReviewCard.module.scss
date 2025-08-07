@@ -14,10 +14,20 @@ $ff-inter: 'Inter', sans-serif;
   box-sizing: border-box;
   position: relative;
   &__avatar {
-    padding: 10px;
+    padding: 10px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    color: #000;
+    text-align: center;
+    text-wrap: nowrap;
+    max-width: 140px;
+    font-family: Alexandria, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
   }
 
   &__avatar img {
@@ -28,20 +38,6 @@ $ff-inter: 'Inter', sans-serif;
     // height: 130px;
     margin-bottom: 10px;
   }
-
-  &__avatar span {
-    color: #000;
-    text-align: center;
-    max-width: 100px;
-    text-wrap: nowrap;
-
-    font-family: Alexandria, sans-serif;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-  }
-
   &__content {
     color: #000;
     display: flex;
@@ -111,7 +107,7 @@ $ff-inter: 'Inter', sans-serif;
 .wrapper {
   display: flex;
   align-items: flex-start;
-  gap: 26px;
+  gap: 16px;
 }
 
 @media (max-width: 1024px) {
