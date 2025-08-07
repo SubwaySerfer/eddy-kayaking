@@ -129,15 +129,17 @@ const Corporate = () => {
               <button className={styles.corporate__button} type="submit">
                 Send request
               </button>
+
+              <p className={styles.corporate__privacy}>
+                By clicking the button, you consent to the
+                <Link href="#" className={styles["corporate__privacy-link"]}>
+                  personal data
+                </Link>
+                and agree to the privacy policy
+              </p>
             </form>
 
-            <p className={styles.corporate__privacy}>
-              By clicking the button, you consent to the
-              <Link href="#" className={styles["corporate__privacy-link"]}>
-                personal data
-              </Link>
-              and agree to the privacy policy
-            </p>
+
           </div>
         </>
       )}

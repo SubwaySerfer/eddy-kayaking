@@ -1,5 +1,5 @@
 .journal {
-  padding: 50px 140px;
+  padding: 68px 140px 40px;
 }
 
 .journal__wrapper {
@@ -12,7 +12,7 @@
 .journal__list {
   width: 100%;
   margin: 0;
-  padding: 48px 0;
+  padding: 0;
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -59,8 +59,8 @@
   font-family: "Alexandria", "Arial", sans-serif;
   font-size: 24px;
   font-weight: 500;
-  line-height: 24px;
-  margin: 0 0 16px 0;
+  margin-bottom: 16px;
+  line-height: 100%;
   padding: 0;
 }
 
@@ -83,7 +83,7 @@
   gap: 10px;
   border-radius: 16px;
   border: 3px solid #000;
-  margin: 60px 0 50px 0;
+  margin: 60px 0;
   color: var(--Text-Fill-Primary-Default, #000);
   text-align: center;
 

@@ -56,8 +56,8 @@ const ReviewsSlider = () => {
 
   return (
     <div className={`${styles.slider} container`}>
-      <p className={styles.slider__title}>What people say about </p>
-      <p className={styles.slider__title}>EDDY tours</p>
+      <h2 className={styles.slider__title}>What people say about <br />
+        EDDY tours</h2>
       {isMobile ? (
         <div className={styles.slider__reviews}>
           {reviewsData.map((review) => (

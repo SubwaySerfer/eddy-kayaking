@@ -1,3 +1,5 @@
+$ff-inter: 'Inter', sans-serif;
+
 .review {
   display: flex;
   align-items: flex-start;
@@ -11,6 +13,22 @@
   height: 26rem;
   box-sizing: border-box;
   position: relative;
+  &__avatar {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: #000;
+    text-align: center;
+    text-wrap: nowrap;
+    max-width: 140px;
+    font-family: Alexandria, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
 
   &__avatar img {
     border-radius: 75px;
@@ -20,14 +38,6 @@
     // height: 130px;
     margin-bottom: 10px;
   }
-
-  &__avatar span {
-    color: #000;
-    text-align: center;
-    max-width: 100px;
-    text-wrap: nowrap;
-  }
-
   &__content {
     color: #000;
     display: flex;
@@ -36,7 +46,7 @@
     width: 100%;
 
     /* 1440/Body_new */
-    font-family: "Alexandria", sans-serif;
+    font-family: 'Alexandria', sans-serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 300;
@@ -55,17 +65,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: max-content;
+    align-self: end;
     flex-direction: column;
-    align-items: flex-end;
-    // padding: 0 0 35px 0;
+    gap: 4px;
     margin-top: auto;
     flex-shrink: 0;
-    height: 35px;
   }
 
   &__stars {
     display: flex;
-    gap: 4px;
+    gap: 2px;
   }
 
   &__link {
@@ -73,6 +83,20 @@
     color: #666;
     text-decoration: underline;
     transition: 0.2s;
+    font-family: $ff-inter;
+    color: #63666b;
+
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17.5px;
+    letter-spacing: 1px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: 25%;
+    text-underline-position: from-font;
 
     &:hover {
       text-decoration: none;
@@ -83,7 +107,7 @@
 .wrapper {
   display: flex;
   align-items: flex-start;
-  gap: 30px;
+  gap: 16px;
 }
 
 @media (max-width: 1024px) {
@@ -91,7 +115,7 @@
     &__content {
       color: #000;
       text-align: center;
-      font-family: "Alexandria", sans-serif;
+      font-family: 'Alexandria', sans-serif;
       font-size: 1rem;
       font-style: normal;
       font-weight: 300;

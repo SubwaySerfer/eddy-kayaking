@@ -7,7 +7,7 @@ const ReviewCard = ({ name, text, href, avatar }: any) => {
     <div className={styles.wrapper}>
       <div className={styles.review__avatar}>
         <Image src={avatar} alt={name} width={100} height={100} />
-        <span>{name}</span>
+        {name}
       </div>
 
       <div className={styles.review}>
@@ -19,10 +19,10 @@ const ReviewCard = ({ name, text, href, avatar }: any) => {
               {[...Array(5)].map((_, i) => (
                 <Image
                   key={i}
-                  src="/images/icons/star.svg"
+                  src="/images/icons/review-star.svg"
                   alt="Star"
-                  width={16}
-                  height={16}
+                  width={30}
+                  height={30}
                 />
               ))}
             </div>

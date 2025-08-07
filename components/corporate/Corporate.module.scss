@@ -1,5 +1,5 @@
-$ff-alexandria: "Alexandria", sans-serif;
-$ff-inter: "Inter", sans-serif;
+$ff-alexandria: 'Alexandria', sans-serif;
+$ff-inter: 'Inter', sans-serif;
 $color-white: #fff;
 
 .corporate {
@@ -30,7 +30,7 @@ $color-white: #fff;
   .modal__text {
     color: #000;
     text-align: center;
-    font-family: "Alexandria", sans-serif;
+    font-family: 'Alexandria', sans-serif;
     font-size: 1rem;
     font-style: normal;
     font-weight: 300;
@@ -48,7 +48,7 @@ $color-white: #fff;
     gap: 0.625rem;
     color: #fff;
     text-align: center;
-    font-family: "Alexandria", sans-serif;
+    font-family: 'Alexandria', sans-serif;
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 500;
@@ -75,7 +75,7 @@ $color-white: #fff;
         rgba(141, 141, 141, 0.39) 0%,
         rgba(141, 141, 141, 0.39) 100%
       ),
-      url("/images/corporate/corp-1.jpg");
+      url('/images/corporate/corp-1.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -86,7 +86,7 @@ $color-white: #fff;
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 40px;
     align-items: center;
   }
 
@@ -94,22 +94,24 @@ $color-white: #fff;
     font-family: $ff-alexandria;
     font-size: 48px;
     font-weight: 400;
-    line-height: 48px;
+    line-height: 100%;
     letter-spacing: 4.8px;
     text-transform: uppercase;
-    margin: 0 0 8px;
     padding: 0;
   }
 
   &__description {
     font-family: $ff-alexandria;
+    max-width: 1160px;
     font-size: 20px;
     font-weight: 300;
-    line-height: 40px;
+    line-height: 200%;
     letter-spacing: 2px;
-    text-shadow: 1px 1px 1.8px rgba(0, 0, 0, 0.37);
-    margin: 0 0 65px;
+    margin-bottom: 45px;
     padding: 0;
+    color: #fff;
+    text-align: center;
+    text-shadow: 1px 2px 1.7px rgba(0, 0, 0, 0.88);
   }
 
   &__form {
@@ -123,8 +125,13 @@ $color-white: #fff;
   }
 
   &__button {
+    display: flex;
+    height: 56px;
+    padding: 11px 0;
+    text-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
     width: 160px;
-    height: 48px;
     background-color: transparent;
     border: 1px solid $color-white;
     color: $color-white;
@@ -148,12 +155,18 @@ $color-white: #fff;
     font-size: 16px;
     font-weight: 300;
     line-height: 28px;
+    font-style: normal;
   }
 
   &__privacy-link {
     color: $color-white;
     text-decoration: underline;
     margin: 0 4px;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: 6%;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
 
     &:hover {
       text-decoration: none;
@@ -162,7 +175,6 @@ $color-white: #fff;
 }
 
 .custom-input {
-  flex: 1;
   min-width: 280px;
   max-width: 360px;
   color: black;
@@ -170,10 +182,13 @@ $color-white: #fff;
   &__label {
     display: block;
     text-align: left;
-    font-family: $ff-alexandria;
+    font-family: $ff-inter;
     font-size: 20px;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
     color: $color-white;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
   }
 
   &__field {
@@ -192,7 +207,7 @@ $color-white: #fff;
       color: var(--Text-Fill-Primary-Hover, #909090);
 
       /* 1440/Body3_Small */
-      font-family: "Inter", sans-serif;
+      font-family: 'Inter', sans-serif;
       font-size: 16px;
       font-style: normal;
       font-weight: 400;
