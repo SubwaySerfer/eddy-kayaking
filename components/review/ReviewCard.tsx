@@ -19,10 +19,10 @@ const ReviewCard = ({ name, text, href, avatar }: any) => {
               {[...Array(5)].map((_, i) => (
                 <Image
                   key={i}
-                  src="/images/icons/star.svg"
+                  src="/images/icons/review-star.svg"
                   alt="Star"
-                  width={16}
-                  height={16}
+                  width={30}
+                  height={30}
                 />
               ))}
             </div>

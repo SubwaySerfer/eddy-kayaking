@@ -148,7 +148,6 @@ const Header = ({
                           className={styles.dropdownTrigger}
                           onClick={() => setDropdownOpen(!dropdownOpen)}
                           style={{
-                            paddingLeft: "15px",
                             display: "flex",
                             alignItems: "center",
                           }}
@@ -158,9 +157,7 @@ const Header = ({
                               ? selectedLocation.toUpperCase()
                               : "BUDVA"}
                           </span>
-                          <span style={{ marginLeft: "6px", fontSize: "15px" }}>
-                            <img src="/images/icons/arrow-dwn.svg" alt="arrow down." />
-                          </span>
+                          <img src="/images/icons/arrow-dwn.svg" alt="arrow down." style={{ marginLeft: "4.5px", height: "10px", width: "10px" }} />
                         </div>
                         {dropdownOpen && (
                           <div className={styles.dropdownMenu}>
