@@ -32,11 +32,9 @@ const contactData: Record<
     address: (
       <>
         {" "}
-        <div style={{ marginBottom: "8px" }}>
-          {" "}
-          <strong>Rentals</strong> Azzuro Beach, Budva 85310, Montenegro
-        </div>
-        <strong>Tours</strong> Slovenska Plaža, Budva 85310, Montenegro
+        <p><strong>Rentals</strong> Azzuro Beach, Budva 85310, Montenegro</p>
+        <p><strong>Tours</strong> Slovenska Plaža, Budva 85310, Montenegro</p>
+        {" "}
       </>
     ),
     hours: "We operate daily from 8 AM to 8 PM",
@@ -162,8 +160,8 @@ const ContactTabs = ({
           <a href={`mailto:${data?.email}`} className="contact-tabs__email">
             {data?.email}
           </a>
-          <p>{data?.address}</p>
-          <p>{data?.hours}</p>
+          {data?.address}
+          <p style={{ marginTop: "8px" }}>{data?.hours}</p>
 
           <div className="contact-tabs__socials">
             <Link
