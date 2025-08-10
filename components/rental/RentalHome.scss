@@ -1,5 +1,5 @@
 .home-rental {
-  padding: 140px 0;
+  padding: 140px 0 110px;
 }
 .home-rental__wrapper {
   display: flex;
@@ -9,7 +9,7 @@
   padding: 0 8.75rem;
 }
 .home-rental__list {
-  //   margin: 80px;
+  margin-top: -8px;
   padding: 0;
   list-style: none;
   display: flex;
@@ -80,6 +80,7 @@
   font-weight: 500;
   line-height: 44px;
   cursor: pointer;
+  letter-spacing: 0.5px;
 }
 .home-btn--blue {
   padding: 18px;
