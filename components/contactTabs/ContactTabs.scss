@@ -118,7 +118,7 @@
       font-style: normal;
       font-weight: 400;
       line-height: 28px;
-      letter-spacing: .6px;
+      letter-spacing: 0.6px;
     }
     strong {
       font-weight: 700;
@@ -158,6 +158,7 @@
   height: 100%;
 }
 
+
 @media (max-width: 1024px) {
   .contact-tabs {
     &__tabs {
@@ -187,6 +188,21 @@
   }
 }
 
+@media (max-width: 768px) {
+  .contact-tabs {
+    &__tabs {
+      padding: 0 14px;
+      grid-template-columns: 1fr;
+    }
+    & .map-wrap {
+      height: 300px !important;
+    }
+    &__content {
+      flex-direction: column;
+    }
+  }
+}
+
 @media (max-width: 425px) {
   .contact-tabs {
     &__tabs {
@@ -195,9 +211,6 @@
 
     &__tab {
       width: 170px;
-    }
-    .map-wrap {
-      height: 415px !important; // заменяет 50vw
     }
   }
 }

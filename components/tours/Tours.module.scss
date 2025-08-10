@@ -155,7 +155,16 @@
 
 @media (max-width: 768px) {
   .tourCard {
-    padding: 100px 20px;
+    padding: 0;
+  & .tourCard__title {
+    display: none;
+  }
+  & .tourCard__description {
+    display: none;
+  }
+  }
+  .tours {
+    flex-direction: column;
   }
 }
 

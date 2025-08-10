@@ -127,26 +127,30 @@ $ff-inter: 'Inter', sans-serif;
 
 @media (max-width: 768px) {
   .review {
-    width: 400px;
     height: 22rem;
-  }
-}
-
-@media (max-width: 425px) {
-  .wrapper {
+    width: 100%;
+    margin-right: 0;
+    padding: 24px 16px 16px;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-
-  .review {
-    width: 340px;
-    padding: 24px 20px;
-
     &__content {
+      gap: 32px;
       align-items: center;
     }
+    &__text {
+      flex: 0;
+      min-height: max-content;
+    }
+    &__footer {
+      margin-top: 0;
+      align-self: center;
+    }
+  }
+  .wrapper {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 16px;
+    align-items: center;
   }
 }
 

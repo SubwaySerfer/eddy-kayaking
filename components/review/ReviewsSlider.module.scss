@@ -123,6 +123,16 @@
   }
 }
 
+@media (max-width: 768px) {
+  .slider {
+    margin: 100px auto 72px auto;
+    &__reviews {
+      padding: 0;
+      padding-bottom: 28px;
+    }
+  }
+}
+
 @media (max-width: 425px) {
   .slider {
     &__arrow {
@@ -133,8 +143,6 @@
       overflow-x: auto;
       scroll-snap-type: x mandatory;
       -webkit-overflow-scrolling: touch;
-      padding: 0;
-      padding-bottom: 1rem;
       justify-content: flex-start;
       &::-webkit-scrollbar {
         display: none;
