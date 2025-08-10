@@ -156,15 +156,26 @@
 @media (max-width: 768px) {
   .tourCard {
     padding: 0;
-  & .tourCard__title {
-    display: none;
-  }
-  & .tourCard__description {
-    display: none;
-  }
+    & .tourCard__title {
+      display: none;
+    }
+    & .tourCard__description {
+      display: none;
+    }
   }
   .tours {
-    flex-direction: column;
+    &__list {
+      flex-direction: column;
+    }
+    &__item {
+      width: 100%;
+    }
+  }
+  .tours__button {
+    width: 200px;
+    height: 56px;
+    font-size: 16px;
+    margin: 40px auto 80px auto;
   }
 }
 
@@ -175,18 +186,7 @@
     padding: 0 12px;
     margin-bottom: 24px;
   }
-  .tours__button {
-    width: 200px;
-    height: 48px;
-    font-size: 16px;
-    margin: 24px auto 80px auto;
-  }
-  .tourCard {
-    width: 100vw;
-    height: 270px;
-    padding: 0 30px;
-    gap: 37px;
-  }
+
   .tourCard__title {
     font-size: 25px;
     line-height: 20px;

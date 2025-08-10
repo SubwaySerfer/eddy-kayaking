@@ -97,9 +97,6 @@
 }
 
 @media (max-width: 480px) {
-  .journal {
-    padding: 16px 4px 0;
-  }
   .journal__list {
     flex-direction: column;
     padding: 12px 0;
@@ -152,6 +149,11 @@
     width: 330px;
     height: 307px;
     margin: 0 auto 40px auto;
+  }
+}
+@media(max-width: 768px) {
+  .journal {
+    padding: 20px 0 0;
   }
 }
 
