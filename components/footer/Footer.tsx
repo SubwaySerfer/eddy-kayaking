@@ -120,6 +120,7 @@ const Footer = () => {
         <div className="footer__copy">
           <p>© 2025 EDDY. All Rights Reserved.</p>
           <Link href="#">Personal data processing policy</Link>
+          <Link href="#">Terms and Conditions</Link>
         </div>
       </div>
     </footer>
