@@ -3,12 +3,17 @@
   color: #fff;
 
   &__tabs {
-    display: flex;
-    justify-content: center;
-    padding-left: 580px;
+    display: grid;
+    grid-template-columns: 1fr 284px 1fr;
+    grid-template-rows: 1fr;
     background: #fff;
+    padding-top: 6px;
   }
-
+  &__wrapper {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    display: flex;
+  }
   &__tab {
     background: #fff;
     color: #000;
@@ -34,8 +39,18 @@
     height: 36px;
     justify-content: center;
     align-items: center;
-    gap: 4px;
+    gap: 19.5px;
     flex-shrink: 0;
+
+    color: var(--Color-Other-Grey2, #444);
+
+    font-family: Alexandria;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
 
     &.active {
       background: #1a1a1a;
@@ -48,9 +63,9 @@
       border-radius: 8px 8px 0px 0px;
       box-shadow: none;
       z-index: 2;
+      justify-content: start;
 
       .icon-location {
-        margin-right: 8px;
         vertical-align: middle;
       }
     }
@@ -58,28 +73,38 @@
 
   &__content {
     display: flex;
-    flex-wrap: wrap;
-    gap: 90px;
     width: 100%;
+  }
+
+  &__phone {
+    margin-bottom: 8px;
+  }
+
+  &__email {
+    margin-bottom: 26px;
   }
 
   &__info {
     background: #1a1a1a;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 16px;
+    width: 100%;
+    padding: 90px 90px 0;
 
     h3 {
+      color: #fff;
+      font-family: Inter, sans-serif;
       font-size: 28px;
-      font-weight: bold;
-      margin-bottom: 8px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 32px;
+      margin-bottom: 42px;
     }
 
     a {
       color: #fff;
       text-decoration: underline;
-      font-family: "Inter", sans-serif;
+      font-family: 'Inter', sans-serif;
       font-size: 20px;
       font-style: normal;
       font-weight: 400;
@@ -87,28 +112,29 @@
     }
 
     p {
-      font-size: 16px;
-      margin: 4px 0;
-      font-family: "Inter", sans-serif;
+      font-family: 'Inter', sans-serif;
       font-size: 16px;
       font-style: normal;
       font-weight: 400;
       line-height: 28px;
     }
+    strong {
+      font-weight: 700;
+    }
   }
 
   &__socials {
     display: flex;
-    gap: 6px;
-    margin-top: 12px;
+    gap: 10px;
+    margin-top: 46px;
 
     a {
       display: inline-flex;
       align-items: center;
       justify-content: center;
       border-radius: 8px 8px 0px 0px;
-      width: 32px;
-      height: 32px;
+      width: 20px;
+      height: 20px;
 
       i {
         font-size: 18px;
@@ -163,7 +189,6 @@
   .contact-tabs {
     &__tabs {
       padding: 0 42.5px;
-      
     }
 
     &__tab {

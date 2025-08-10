@@ -32,11 +32,9 @@ const contactData: Record<
     address: (
       <>
         {" "}
-        <div style={{ marginBottom: "8px" }}>
-          {" "}
-          <strong>Rentals</strong> Azzuro Beach, Budva 85310, Montenegro
-        </div>
-        <strong>Tours</strong> Slovenska Plaža, Budva 85310, Montenegro
+        <p><strong>Rentals</strong> Azzuro Beach, Budva 85310, Montenegro</p>
+        <p><strong>Tours</strong> Slovenska Plaža, Budva 85310, Montenegro</p>
+        {" "}
       </>
     ),
     hours: "We operate daily from 8 AM to 8 PM",
@@ -129,20 +127,22 @@ const ContactTabs = ({
   return (
     <section className="contact-tabs">
       <div className="contact-tabs__tabs">
-        {tabs.map((tab) => (
-          <button
-            key={tab.id}
-            className={`contact-tabs__tab ${activeTab === tab.id ? "active" : ""}`}
-            onClick={() => setActiveTab(tab.id)}
-          >
-            {activeTab === tab.id && (
-              <span className="icon-location">
-                <img src="/images/icons/tabIcon.svg" alt="budva" />
-              </span>
-            )}{" "}
-            {tab.label}
-          </button>
-        ))}
+        <div className="contact-tabs__wrapper">
+          {tabs.map((tab) => (
+            <button
+              key={tab.id}
+              className={`contact-tabs__tab ${activeTab === tab.id ? "active" : ""}`}
+              onClick={() => setActiveTab(tab.id)}
+            >
+              {activeTab === tab.id && (
+                <span className="icon-location">
+                  <img src="/images/icons/tabIcon.svg" alt="budva" />
+                </span>
+              )}{" "}
+              {tab.label}
+            </button>
+          ))}
+        </div>
       </div>
 
       <div className="contact-tabs__content">
@@ -160,8 +160,8 @@ const ContactTabs = ({
           <a href={`mailto:${data?.email}`} className="contact-tabs__email">
             {data?.email}
           </a>
-          <p>{data?.address}</p>
-          <p>{data?.hours}</p>
+          {data?.address}
+          <p style={{ marginTop: "8px" }}>{data?.hours}</p>
 
           <div className="contact-tabs__socials">
             <Link
