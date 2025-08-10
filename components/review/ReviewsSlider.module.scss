@@ -28,14 +28,16 @@
     background: transparent;
     border: none;
     cursor: pointer;
-    width: 32px;
-    height: 32px;
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: transform 0.3s ease;
     z-index: 2;
-
+    & img {
+      width: 100%;
+    }
     &:first-child {
       left: 2.5rem;
     }
