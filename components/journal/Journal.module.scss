@@ -40,7 +40,7 @@
 }
 
 .journal-card__image-wrapper::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -56,7 +56,7 @@
 
 .journal-card__title {
   color: #000000;
-  font-family: "Alexandria", "Arial", sans-serif;
+  font-family: 'Alexandria', 'Arial', sans-serif;
   font-size: 24px;
   font-weight: 500;
   margin-bottom: 16px;
@@ -66,7 +66,7 @@
 
 .journal-card__text {
   color: #000000;
-  font-family: "Alexandria", "Arial", sans-serif;
+  font-family: 'Alexandria', 'Arial', sans-serif;
   font-size: 18px;
   font-weight: 300;
   line-height: 22px;
@@ -88,7 +88,7 @@
   text-align: center;
 
   /* 1440/Button */
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
@@ -97,9 +97,6 @@
 }
 
 @media (max-width: 480px) {
-  .journal {
-    padding: 16px 4px 0;
-  }
   .journal__list {
     flex-direction: column;
     padding: 12px 0;
@@ -107,7 +104,6 @@
   .journal-card {
     width: 330px;
     height: 307px;
-    margin: 0 auto 40px auto;
   }
   .journal-card__title {
     font-size: 22px;
@@ -152,6 +148,14 @@
     width: 330px;
     height: 307px;
     margin: 0 auto 40px auto;
+  }
+}
+@media (max-width: 768px) {
+  .journal {
+    padding: 20px 0 0;
+  }
+  .journal-card {
+    margin: 0 auto 30px auto;
   }
 }
 

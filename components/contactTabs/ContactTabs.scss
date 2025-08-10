@@ -118,7 +118,7 @@
       font-style: normal;
       font-weight: 400;
       line-height: 28px;
-      letter-spacing: .6px;
+      letter-spacing: 0.6px;
     }
     strong {
       font-weight: 700;
@@ -187,6 +187,36 @@
   }
 }
 
+@media (max-width: 768px) {
+  .contact-tabs {
+    &__tabs {
+      padding: 0 14px;
+      grid-template-columns: 1fr;
+    }
+    &__phone {
+      margin-bottom: 4px;
+    }
+    &__email {
+      margin-bottom: 16px;
+    }
+    &__info {
+      padding: 24px 20px;
+      & h3 {
+        margin-bottom: 20px;
+      }
+    }
+    & .map-wrap {
+      height: 300px !important;
+    }
+    &__content {
+      flex-direction: column;
+    }
+    &__socials {
+      margin-top: 21px;
+    }
+  }
+}
+
 @media (max-width: 425px) {
   .contact-tabs {
     &__tabs {
@@ -195,9 +225,6 @@
 
     &__tab {
       width: 170px;
-    }
-    .map-wrap {
-      height: 415px !important; // заменяет 50vw
     }
   }
 }

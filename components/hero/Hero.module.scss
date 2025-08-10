@@ -59,6 +59,9 @@
   .hero {
     margin: 0 auto 60px;
   }
+  .hero__img {
+    max-height: 645px;
+  }
 }
 
 @media (max-width: 425px) {
