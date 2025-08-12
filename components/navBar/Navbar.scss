@@ -245,6 +245,11 @@
       height: 44px;
       padding: 0;
     }
+    &__toggle {
+      & img {
+        margin-bottom: 3px;
+      }
+    }
   }
   .custom-dropdown .dropdown-trigger {
     font-weight: 400;

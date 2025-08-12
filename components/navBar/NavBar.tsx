@@ -95,7 +95,7 @@ const Navbar = ({
                 key="more"
                 className="navbar__link"
                 onClick={() => {
-                  setMobileMenuOpen(false); // 👈 обязательно
+                  setMobileMenuOpen(false);
                   setMoreMenuOpen(true);
                 }}
               >
@@ -141,11 +141,12 @@ const Navbar = ({
             )}
           </div>
         </div>
-        <div style={{ display: "flex", gap: "16px" }}>
+
+        <div style={{ display: "flex", gap: "16px", alignItems: "center" }}>
           <button
             className="navbar__toggle"
             onClick={handleContactsClick}
-            aria-label="Open menu"
+            aria-label="Open contacts"
           >
             <img
               src="/images/icons/tabIcon.svg"
@@ -159,112 +160,70 @@ const Navbar = ({
             onClick={() => setMobileMenuOpen(true)}
             aria-label="Open menu"
           >
-            ☰
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect y="2" width="22" height="2" fill="white" />
+              <rect y="10" width="22" height="2" fill="white" />
+              <rect y="18" width="22" height="2" fill="white" />
+            </svg>
+
           </button>
         </div>
       </div>
 
-      {/* Mobile Overlay */}
-      {(isMoreMenuOpen || isMobileMenuOpen) && (
-        <div className="navbar__overlay">
-          <button
-            className="navbar__close"
-            onClick={() => {
-              setMobileMenuOpen(false); // 👈 обязательно
-              setMoreMenuOpen(false);
-            }}
-          >
-            ✕
-          </button>
-          <ul className="navbar__overlay-menu">
-            {moreMenuItems.map((item) => (
-              <li key={item.name}>
-                {item.name === "Contacts" ? (
-                  <span onClick={handleContactsClick}>
-                    {item.name.toUpperCase()}
-                  </span>
-                ) : (
-                  <Link
-                    href={`/${item.link}`}
-                    onClick={() => setMoreMenuOpen(false)}
-                  >
-                    {item.name.toUpperCase()}
-                  </Link>
-                )}
-              </li>
-            ))}
-          </ul>
-          {/* 👇 добавь сюда блок социальных иконок */}
-          <div className="navbar__overlay-socials">
-            <a
-              href="https://instagram.com/eddy_community"
-              target="_blank"
-              rel="noopener noreferrer"
+      {
+        (isMoreMenuOpen || isMobileMenuOpen) && (
+          <div className="navbar__overlay">
+            <button
+              className="navbar__close"
+              onClick={() => {
+                setMobileMenuOpen(false);
+                setMoreMenuOpen(false);
+              }}
             >
-              <img src="/images/icons/instanavbar.svg" alt="Instagram" />
-            </a>
-            <a
-              href="https://t.me/eddy_community"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="/images/icons/teleganav.svg" alt="Telegram" />
-            </a>
-          </div>
-        </div>
-      )}
+              ✕
+            </button>
+            <ul className="navbar__overlay-menu">
+              {moreMenuItems.map((item) => (
+                <li key={item.name}>
+                  {item.name === "Contacts" ? (
+                    <span onClick={handleContactsClick}>
+                      {item.name.toUpperCase()}
+                    </span>
+                  ) : (
+                    <Link
+                      href={`/${item.link}`}
+                      onClick={() => {
+                        setMoreMenuOpen(false);
+                        setMobileMenuOpen(false);
+                      }}
+                    >
+                      {item.name.toUpperCase()}
+                    </Link>
+                  )}
+                </li>
+              ))}
+            </ul>
 
-      {/* More Overlay */}
-      {(isMoreMenuOpen || isMobileMenuOpen) && (
-        <div className="navbar__overlay">
-          <button
-            className="navbar__close"
-            onClick={() => {
-              setMobileMenuOpen(false); // 👈 обязательно
-              setMoreMenuOpen(false);
-            }}
-          >
-            ✕
-          </button>
-          <ul className="navbar__overlay-menu">
-            {moreMenuItems.map((item) => (
-              <li key={item.name}>
-                {item.name === "Contacts" ? (
-                  <span onClick={handleContactsClick}>
-                    {item.name.toUpperCase()}
-                  </span>
-                ) : (
-                  <Link
-                    href={`/${item.link}`}
-                    onClick={() => setMoreMenuOpen(false)}
-                  >
-                    {item.name.toUpperCase()}
-                  </Link>
-                )}
-              </li>
-            ))}
-          </ul>
-
-          {/* 👇 добавь сюда блок социальных иконок */}
-          <div className="navbar__overlay-socials">
-            <a
-              href="https://instagram.com/eddy_community"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="/images/icons/instanavbar.svg" alt="Instagram" />
-            </a>
-            <a
-              href="https://t.me/eddy_community"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="/images/icons/teleganav.svg" alt="Telegram" />
-            </a>
+            <div className="navbar__overlay-socials">
+              <a
+                href="https://instagram.com/eddy_community"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="/images/icons/instanavbar.svg" alt="Instagram" />
+              </a>
+              <a
+                href="https://t.me/eddy_community"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="/images/icons/teleganav.svg" alt="Telegram" />
+              </a>
+            </div>
           </div>
-        </div>
-      )}
-    </header>
+        )
+      }
+    </header >
   );
 };
 
