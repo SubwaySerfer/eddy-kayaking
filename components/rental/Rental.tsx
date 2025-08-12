@@ -15,7 +15,6 @@ const Rental = () => {
               alt="Rental Logo"
               width={400}
               height={137}
-              className="home-rental__logo"
             />
           </Link>
 
@@ -63,7 +62,7 @@ const Rental = () => {
               </Link>
             </li>
           </ul>
-          <Link href="/Rentals">
+          <Link href="/Rentals" className="home-rental__link">
             <button
               className="home-btn home-btn--rental home-rental__btn"
               type="button"
