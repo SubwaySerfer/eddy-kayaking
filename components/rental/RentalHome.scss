@@ -42,7 +42,7 @@
   text-align: center;
 
   /* 1440/Button */
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
@@ -58,7 +58,7 @@
   text-align: center;
 
   /* 1440/H5_RentalCards */
-  font-family: "Alexandria", sans-serif;
+  font-family: 'Alexandria', sans-serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 500;
@@ -75,7 +75,7 @@
   background-color: transparent;
   border: 3px solid #000000;
   border-radius: 16px;
-  font-family: "Inter", "Arial", sans-serif;
+  font-family: 'Inter', 'Arial', sans-serif;
   font-size: 24px;
   font-weight: 500;
   line-height: 44px;
@@ -129,6 +129,47 @@
 
   .home-rental-card-item {
     width: 330px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-rental {
+    padding: 0 0 100px;
+    &__wrapper {
+      padding: 0 30px;
+      gap: 0;
+    }
+    &__logo {
+      padding: 0 22px;
+      margin-bottom: 32px;
+    }
+    &__list {
+      gap: 0;
+    }
+  }
+  .home-rental__link {
+    margin-top: 24px;
+  }
+  .home-rental-card-item {
+    width: 100%;
+    padding: 16.2px 0;
+    gap: 13.89px;
+    height: auto;
+    &__title {
+      text-align: center;
+      font-size: 27.789px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 110%;
+      letter-spacing: 2.779px;
+      text-transform: uppercase;
+    }
+  }
+  .pt-top {
+    padding-top: 0;
+  }
+  .home-btn--rental {
+    border-radius: 8px;
   }
 }
 

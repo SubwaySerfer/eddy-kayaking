@@ -23,9 +23,10 @@ const Hero = () => {
       <Link href="/sea-kayaking" style={{ width: "100vw" }}>
         <div className={styles.hero__content}>
           <h1 className={styles.hero__title}>SEA KAYAKING</h1>
-          <div className={styles.img__fluid}>
+            <picture className={styles.img__fluid}>
+            <source srcSet="/images/icons/coming-soon-mobile.svg" media="(max-width: 767px)" />
             <img src="/images/main/coming-soon.svg" alt="Coming Soon" />
-          </div>
+            </picture>
         </div>
       </Link>
     </section>

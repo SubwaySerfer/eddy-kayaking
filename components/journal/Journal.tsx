@@ -19,10 +19,8 @@ const Journal = () => {
           />
         </Link>
         <JournalCards />
-        <Link href="/Journal">
-          <button className={styles["journal-button"]} type="button">
-            <a href="/journal">All Articles</a>
-          </button>
+        <Link href="/journal" className={styles["journal-button"]}>
+          All Articles
         </Link>
       </div>
     </section>

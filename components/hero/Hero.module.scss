@@ -59,24 +59,25 @@
   .hero {
     margin: 0 auto 60px;
   }
-  .hero__img {
-    max-height: 645px;
+  .img__fluid {
+    padding: 0 10px;
+    display: flex;
+    height: auto;
+  }
+  .img__fluid img {
+    width: 100%;
+    object-fit: contain; // или 'cover', в зависимости от желаемого поведения
+    display: block;
+    min-height: 116px;
+  }
+  .hero__title {
+    font-size: 30.333px;
+    margin-bottom: 23px;
   }
 }
 
 @media (max-width: 425px) {
-  .img__fluid img {
-    height: 116px;
-    width: 364px;
-    object-fit: contain; // или 'cover', в зависимости от желаемого поведения
-    display: block;
-  }
-
   .hero {
     margin: 0 auto 0;
-  }
-
-  .hero__title {
-    font-size: 30.333px;
   }
 }
