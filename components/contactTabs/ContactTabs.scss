@@ -189,12 +189,15 @@
 
 @media (max-width: 768px) {
   .contact-tabs {
+    &__wrapper {
+      grid-column: 1 / 2;
+    }
     &__tabs {
       padding: 0 14px;
       grid-template-columns: 1fr;
     }
     &__phone {
-      margin-bottom: 4px;
+      margin-bottom: 0;
     }
     &__email {
       margin-bottom: 16px;
@@ -206,28 +209,27 @@
       }
     }
     & .map-wrap {
-      height: 300px !important;
+      height: 324px !important;
+      padding-top: 24px;
     }
     &__content {
       flex-direction: column;
     }
     &__socials {
-      margin-top: 21px;
+      margin-top: 25px;
     }
-  }
-}
-
-@media (max-width: 425px) {
-  .contact-tabs {
-    &__tabs {
-      padding: 0 42.5px;
-    }
-
     &__tab {
-      width: 170px;
+      width: 50%;
     }
   }
+  .contact-tabs p {
+    line-height: 20px;
+  }
+  .map.leaflet-container {
+    max-height: 300px;
+  }
 }
+
 @media (max-width: 390px) {
   .contact-tabs {
     padding: 2px 1px;

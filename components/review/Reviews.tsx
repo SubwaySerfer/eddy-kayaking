@@ -56,7 +56,7 @@ const ReviewsSlider = () => {
 
   return (
     <div className={`${styles.slider} container`}>
-      <h2 className={styles.slider__title}>What people say about <br />
+      <h2 className={styles.slider__title}>What people say about <br className="hide-mobile"/>
         EDDY tours</h2>
       {isMobile ? (
         <div className={styles.slider__reviews}>
