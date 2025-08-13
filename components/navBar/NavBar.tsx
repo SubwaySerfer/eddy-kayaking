@@ -77,6 +77,7 @@ const Navbar = ({
 
   return (
     <header className="navbar">
+      {/* mobile header */}
       <div className="navbar__inner">
         <Link href="/">
           <Image
