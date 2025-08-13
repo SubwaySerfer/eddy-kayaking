@@ -125,20 +125,9 @@
 
 @media (max-width: 768px) {
   .slider {
-    margin: 100px auto 72px auto;
-    &__reviews {
-      padding: 0;
-      padding-bottom: 28px;
-    }
-  }
-}
-
-@media (max-width: 425px) {
-  .slider {
     &__arrow {
       display: none;
     }
-
     &__reviews {
       overflow-x: auto;
       scroll-snap-type: x mandatory;
@@ -148,10 +137,20 @@
         display: none;
       }
     }
-
     &__card {
       flex: 0 0 auto;
       scroll-snap-align: start;
     }
+  }
+  .slider {
+    margin: 100px auto 67px auto;
+    &__reviews {
+      padding: 0;
+      padding-bottom: 28px;
+      margin-top: 24px;
+    }
+  }
+  .hide-mobile {
+    display: none;
   }
 }

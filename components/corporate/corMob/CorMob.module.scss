@@ -1,12 +1,16 @@
-$ff-alexandria: "Alexandria", sans-serif;
-$ff-inter: "Inter", sans-serif;
+$ff-alexandria: 'Alexandria', sans-serif;
+$ff-inter: 'Inter', sans-serif;
 $color-white: #fff;
 
 .corporateMob {
   margin-top: 100px;
   /* оставить так — это корневой wrapper */
 }
-
+@media (max-width: 768px) {
+  .corporateMob {
+    margin-top: 95px;
+  }
+}
 .modalMob__overlayMob {
   position: fixed;
   top: 0;
@@ -34,7 +38,7 @@ $color-white: #fff;
 .modalMob__textMob {
   color: #000;
   text-align: center;
-  font-family: "Alexandria", sans-serif;
+  font-family: 'Alexandria', sans-serif;
   font-size: 1rem;
   font-style: normal;
   font-weight: 300;
@@ -51,7 +55,7 @@ $color-white: #fff;
   gap: 0.625rem;
   color: #fff;
   text-align: center;
-  font-family: "Alexandria", sans-serif;
+  font-family: 'Alexandria', sans-serif;
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 500;
@@ -77,7 +81,7 @@ $color-white: #fff;
       rgba(141, 141, 141, 0.39) 0%,
       rgba(141, 141, 141, 0.39) 100%
     ),
-    url("/images/corporate/corp-1.jpg");
+    url('/images/corporate/corp-1.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -182,7 +186,7 @@ $color-white: #fff;
 
 .custom-inputMob__fieldMob::placeholder {
   color: var(--Text-Fill-Primary-Hover, #909090);
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -197,5 +201,34 @@ $color-white: #fff;
 @media (max-width: 320px) {
   .custom-inputMob__fieldMob {
     width: 280px;
+  }
+}
+@media (max-width: 768px) {
+  .corporateMob__titleMob {
+    font-family: 'Archivo Black';
+    margin-bottom: 18.5px;
+  }
+  .corporateMob__wrapperMob {
+    padding: 40px 22px 0;
+    gap: 40px;
+  }
+  .corporateMob__descriptionMob {
+    line-height: 26px;
+    letter-spacing: -0.2px;
+  }
+  .custom-inputMob__labelMob {
+    line-height: 34px;
+    margin-bottom: 0;
+  }
+  .corporateMob__formMob {
+    gap: 8px;
+    margin-bottom: 54.4px;
+  }
+  .corporateMob__buttonMob {
+    margin-top: 34px;
+    height: 56px;
+    border-radius: 4px;
+    border: 2px solid #fff;
+    background: rgba(0, 0, 0, 0);
   }
 }

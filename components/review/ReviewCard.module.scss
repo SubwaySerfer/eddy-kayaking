@@ -127,7 +127,7 @@ $ff-inter: 'Inter', sans-serif;
 
 @media (max-width: 768px) {
   .review {
-    height: 22rem;
+    height: auto;
     width: 100%;
     margin-right: 0;
     padding: 24px 16px 16px;
@@ -139,10 +139,20 @@ $ff-inter: 'Inter', sans-serif;
     &__text {
       flex: 0;
       min-height: max-content;
+      line-height: 140%;
     }
     &__footer {
       margin-top: 0;
+      gap: 2px;
       align-self: center;
+    }
+    &__avatar {
+      padding: 0;
+      margin-top: 10px;
+      img {
+        width: 84px;
+        margin-bottom: 7px;
+      }
     }
   }
   .wrapper {
@@ -151,6 +161,15 @@ $ff-inter: 'Inter', sans-serif;
     flex-direction: column-reverse;
     gap: 16px;
     align-items: center;
+  }
+  .review__stars {
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .review__link {
+    font-size: 10px;
   }
 }
 
