@@ -235,6 +235,23 @@
 .anchorNavbarMobile {
   display: none;
 }
+
+@media (max-width: 1250px) {
+  .navbar__menu {
+    width: 100%;
+  }
+  .navbar {
+    padding: 0 20px;
+  }
+  .navbar__inner {
+    gap: 20px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1025px) {
+  .navbar__inner {
+    gap: 100px;
+  }
+}
 @media (max-width: 768px) {
   .navbar {
     padding: 0 60px;

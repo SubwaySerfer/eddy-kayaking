@@ -98,6 +98,20 @@
   border-radius: 4px;
 }
 
+@media(max-width: 1400px) {
+  .home-rental__wrapper {
+    padding: 0 10px;
+  }
+}
+@media(max-width: 1250px) {
+  .home-rental-card-item {
+    width: 100%;
+  }
+  .home-rental-card-item__title {
+    font-size: 28px;
+  }
+}
+
 @media (max-width: 1024px) {
   .home-rental__wrapper {
     padding: 0 4.4rem;
@@ -157,7 +171,7 @@
     height: auto;
     &__title {
       text-align: center;
-      font-size: 27.789px;
+      font-size: 28px;
       font-style: normal;
       font-weight: 500;
       line-height: 110%;
@@ -183,3 +197,4 @@
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
+
