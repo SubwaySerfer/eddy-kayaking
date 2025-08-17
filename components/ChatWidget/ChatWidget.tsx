@@ -4,24 +4,37 @@ import Image from "next/image";
 import "./ChatWidget.scss";
 import { useWindowSize } from "react-use";
 
-const socials = [
+const socialsData = [
   {
-    name: "WatsApp",
+    name: "WhatsApp",
     iconDefault: "/images/icons/w-li.svg",
     iconHover: "/images/icons/w-dr.svg",
     link: "https://wa.me/38269719904",
+    qrCode: "/images/icons/whatsapp-qr.svg",
+    buttonText: "Go to WhatsApp",
+    buttonIcon: "/images/icons/w-dr.svg",
+    description: "Or scan this QR code to contact us on WhatsApp from your phone:"
   },
   {
     name: "Telegram",
     iconDefault: "/images/icons/tg-li.svg",
     iconHover: "/images/icons/tg-dr.svg",
     link: "https://t.me/eddy_community",
+    qrCode: "/images/icons/telegram-qr.svg", // QR код для Telegram
+    buttonText: "Go to Telegram",
+    buttonIcon: "/images/icons/tg-dr.svg",
+    description: "Or scan this QR code to contact us on Telegram from your phone:"
   },
+
   {
     name: "Instagram",
     iconDefault: "/images/icons/inst-li.svg",
     iconHover: "/images/icons/inst-dr.svg",
     link: "https://www.instagram.com/eddy_community",
+    qrCode: "/images/icons/instagram-qr.svg", // QR код для Instagram
+    buttonText: "Go to Instagram",
+    buttonIcon: "/images/icons/inst-dr.svg",
+    description: "Or scan this QR code to contact us on Instagram from your phone:"
   },
 ];
 
@@ -31,6 +44,7 @@ const ChatWidget = () => {
   const [hovered, setHovered] = useState<number | null>(null);
   const [isClosing, setIsClosing] = useState(false); // State to track closing animation
   const [isMobile, setIsMobile] = useState(false);
+  const [selectedSocial, setSelectedSocial] = useState<number>(0);
 
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -116,47 +130,42 @@ const ChatWidget = () => {
         </div>
         <div className="bodychar">
           <div className="socials">
-            {socials.map((social, index) => (
-              <a
-                href={social.link}
-                target="_blank"
-                rel="noreferrer"
+            {socialsData.map((social, index) => (
+              <div
                 key={index}
+                className={`social-item ${hovered === index ? "hovered" : ""} ${selectedSocial === index ? "selected" : ""}`}
+                onMouseEnter={() => setHovered(index)}
+                onMouseLeave={() => setHovered(null)}
+                onClick={() => setSelectedSocial(index)} // Переключение при клике
               >
-                <div
-                  className={`social-item ${hovered === index ? "hovered" : ""}`}
-                  onMouseEnter={() => setHovered(index)}
-                  onMouseLeave={() => setHovered(null)}
-                >
-                  <img
-                    src={
-                      hovered === index ? social.iconHover : social.iconDefault
-                    }
-                    alt={social.name}
-                  />
-                  <span>{social.name}</span>
-                </div>
-              </a>
+                <img
+                  src={hovered === index ? social.iconHover : social.iconDefault}
+                  alt={social.name}
+                />
+                <span>{social.name}</span>
+              </div>
             ))}
           </div>
           <div className="go-button">
             <a
-              href="https://wa.me/38269719904"
+              href={socialsData[selectedSocial].link}
               target="_blank"
               rel="noreferrer"
             >
-              <img src={"/images/icons/tg-dr.svg"} alt={"whatsapp"} /> Go to
-              WhatsApp
+              <img
+                src={socialsData[selectedSocial].buttonIcon}
+                alt={socialsData[selectedSocial].name}
+              />
+              {socialsData[selectedSocial].buttonText}
             </a>
           </div>
-
           <div className="qr-section">
             <p>
-              Or scan this QR code to contact us <br /> on WhatsApp from your phone:
+              {socialsData[selectedSocial].description}
             </p>
             <img
-              src="/images/icons/qr.svg"
-              alt="QR Code"
+              src={socialsData[selectedSocial].qrCode}
+              alt={`${socialsData[selectedSocial].name} QR Code`}
               className="qr-image"
             />
           </div>
