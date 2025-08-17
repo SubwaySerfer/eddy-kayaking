@@ -164,11 +164,6 @@
       padding-left: 0;
     }
 
-    .map-wrap {
-      padding-top: 25px;
-      width: 100vw !important; // заменяет 50vw
-    }
-
     &__info {
       padding: 0 20% 0 10%;
 
@@ -184,6 +179,16 @@
         font-size: 14px;
       }
     }
+  }
+}
+@media(min-width: 769px) and (max-width: 1250px) {
+  .contact-tabs__tabs {
+    grid-template-columns: 1fr 49px 1fr;
+  }
+}
+@media(max-width: 1050px) {
+  .contact-tabs__info {
+    padding: 20px 20px 0;
   }
 }
 
@@ -211,6 +216,7 @@
     & .map-wrap {
       height: 324px !important;
       padding-top: 24px;
+      width: 100vw;
     }
     &__content {
       flex-direction: column;
